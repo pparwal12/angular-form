@@ -1,0 +1,9 @@
+<div [formGroup]="testForm">
+    <div class="form-group col-xs-3">
+        <label>test</label>
+        <input type="text" class="form-control" formControlName="test">
+        <small [hidden]="testForm.controls.test.valid" class="text-danger">
+            Test is required
+        </small>
+    </div>
+</div>
